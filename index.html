@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Power BI - Pepe Saloon & Spa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <img src="logo1_pepe_saloon.png" alt="Pepe Saloon & Spa Logo">
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo1_pepe_saloon.png" alt="Pepe Saloon & Spa Logo"
+                    class="navbar-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInLeft" href="#"><i class="fas fa-home"></i>
+                            Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInRight scroll-to" href="#dashboard"><i
+                                class="fas fa-chart-line"></i> Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleIndicators" class="carousel slide animate__animated animate__zoomIn" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('foto_1.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Calidad y Servicio</h5>
+                    <p>Disfruta de los mejores servicios de salón y spa</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('foto_2.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Experiencia Única</h5>
+                    <p>Vive una experiencia de relajación inigualable</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('foto_3.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ambiente Relajante</h5>
+                    <p>Un espacio creado para tu comodidad y paz</p>
+
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('foto_4.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Innovación Constante</h5>
+                    <p>Siempre a la vanguardia en tratamientos de belleza</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('foto_5.jpg');">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Profesionales Capacitados</h5>
+                    <p>Atención de expertos en belleza y bienestar</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header-container">
+        <div class="header animate__animated animate__fadeInDown">
+            <img src="logo1_pepe_saloon.png" alt="Pepe Saloon & Spa Logo" class="img-fluid">
+            <h1 class="display-4 animate__animated animate__lightSpeedInRight" data-aos="fade-up">Bienvenido a Pepe
+                Saloon & Spa</h1>
+            <p class="lead animate__animated animate__fadeInUp" data-aos="fade-up" data-aos-delay="100">Visualiza tus
+                datos de manera clara y efectiva.</p>
+            <a href="#dashboard" class="btn btn-primary btn-lg animate__animated animate__bounceIn scroll-to"
+                data-aos="fade-up" data-aos-delay="200"><i class="fas fa-arrow-right"></i> Ir a Dashboard</a>
+        </div>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="container-fluid my-5 animate__animated animate__fadeInUp">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNGUyYTZmMWEtYTZjYy00YTY1LTgyYTctZTZiYWQ0ZjJjOGViIiwidCI6IjI0OTNlYWRlLWY3MjQtNDU3OC1iYTUwLTY1NGEzNjE3ZTM1ZSIsImMiOjR9&embedImagePlaceholder=true&pageName=731e4ccbe080123d7b90"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="animate__animated animate__fadeInUp bg-light text-dark py-4">
+        <div class="container text-center">
+            <img src="logo1_pepe_saloon.png" alt="Pepe Saloon & Spa Logo" class="footer-logo mb-3">
+            <p>&copy; 2024 Pepe Saloon & Spa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AOS for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+
+</html>
